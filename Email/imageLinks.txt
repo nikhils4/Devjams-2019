@@ -2,3 +2,6 @@ Blue-box : http://res.cloudinary.com/avatarimg/image/upload/v1558559840/quadro/l
 Red-box : http://res.cloudinary.com/avatarimg/image/upload/v1558559730/quadro/plxin7xudewjojsb7dum.png
 Top : http://res.cloudinary.com/avatarimg/image/upload/v1558559671/quadro/u4l6fzngotv4gljpklol.png
 Bottom : http://res.cloudinary.com/avatarimg/image/upload/v1558559771/quadro/vbxlrwbfa0fowjsar4cm.png
+Human : http://res.cloudinary.com/avatarimg/image/upload/v1558560556/quadro/xnwkcxo9g73g0d5xguyw.png
+Top1 : http://res.cloudinary.com/avatarimg/image/upload/v1558560783/quadro/xrdcrpipmfv2omlvl1de.png
+Top2 : http://res.cloudinary.com/avatarimg/image/upload/v1558560721/quadro/k0kao2kn4dqsfkyjbh59.png
