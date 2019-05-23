@@ -5,3 +5,5 @@ Bottom : http://res.cloudinary.com/avatarimg/image/upload/v1558559771/quadro/vbx
 Human : http://res.cloudinary.com/avatarimg/image/upload/v1558560556/quadro/xnwkcxo9g73g0d5xguyw.png
 Top1 : http://res.cloudinary.com/avatarimg/image/upload/v1558560783/quadro/xrdcrpipmfv2omlvl1de.png
 Top2 : http://res.cloudinary.com/avatarimg/image/upload/v1558560721/quadro/k0kao2kn4dqsfkyjbh59.png
+Red-Content : http://res.cloudinary.com/avatarimg/image/upload/v1558648558/quadro/canqn23kqb1vuo7kc2nx.png
+Blue-Content : http://res.cloudinary.com/avatarimg/image/upload/v1558648958/quadro/fu9blmj65bghwccsdf5v.png
