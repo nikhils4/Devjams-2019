@@ -7,6 +7,9 @@ Top1 : http://res.cloudinary.com/avatarimg/image/upload/v1558560783/quadro/xrdcr
 Top2 : http://res.cloudinary.com/avatarimg/image/upload/v1558560721/quadro/k0kao2kn4dqsfkyjbh59.png
 Red-Content : http://res.cloudinary.com/avatarimg/image/upload/v1558648558/quadro/canqn23kqb1vuo7kc2nx.png
 Blue-Content : http://res.cloudinary.com/avatarimg/image/upload/v1558648958/quadro/fu9blmj65bghwccsdf5v.png
+Facebook : http://res.cloudinary.com/avatarimg/image/upload/v1558896126/quadro/xduyxvkdckpmn4bnzfdu.png
+Twitter : http://res.cloudinary.com/avatarimg/image/upload/v1558896250/quadro/rm1ezokrgh287hmgo1j2.png
+Instagram : http://res.cloudinary.com/avatarimg/image/upload/v1558896196/quadro/ncs8mcametzdftd3qqwo.png
 
 
 
