@@ -27,7 +27,8 @@
             left : 25%;
             font-size : 20px;
             font-weight : bold;
-            color : lightgray
+            color : lightgray;
+            cursor: pointer
         }
         .nav-box-right {
             position : absolute;
@@ -55,42 +56,42 @@
 
     <!-- Home Page -->
 
-    <div class="container-fluid">
+    <div class="container-fluid" >
         <div class="row" style="padding-top : 18vh">
             <div class="col-2" >
 
-                <div class="nav-box" style="border-top-color : red">
-                    <p class="nav-box-heading">
+                <div class="nav-box" style="border-top-color : red" >
+                    <p id="about-us" class="nav-box-heading" onclick="colorChange(event, 0)">
                         About Us
                     </p>
                 </div>
                 <div class="nav-box" style="border-top-color : blue">
-                    <p class="nav-box-heading">
+                    <p id="hackathon" class="nav-box-heading" onclick="colorChange(event, 1)">
                         Hackathon
                     </p>
                 </div>
                 <div class="nav-box" style="border-top-color : green">
-                    <p class="nav-box-heading">
+                    <p id="timeline" class="nav-box-heading" onclick="colorChange(event, 2)">
                         Timeline
                     </p>
                 </div>
                 <div class="nav-box" style="border-top-color : orange">
-                    <p class="nav-box-heading">
+                    <p id="speakers" class="nav-box-heading" onclick="colorChange(event, 3)">
                         Speakers
                     </p>
                 </div>
                 <div class="nav-box" style="border-top-color : red">
-                    <p class="nav-box-heading">
+                    <p id="sponsors" class="nav-box-heading" onclick="colorChange(event, 0)">
                         Sponsors
                     </p>
                 </div>
                 <div class="nav-box" style="border-top-color : blue">
-                    <p class="nav-box-heading">
+                    <p id="contact-us" class="nav-box-heading" onclick="colorChange(event, 1)">
                         Contact Us
                     </p>
                 </div>
                 <div class="nav-box" style="border-top-color : green">
-                    <p class="nav-box-heading">
+                    <p id="documents" class="nav-box-heading" onclick="colorChange(event, 2)">
                         Documents
                     </p>
                 </div>
@@ -112,11 +113,38 @@
     </div>
 
 
+    <!-- About US -->
+
+    <div class="container-fluid">
+        <div class="row">
+            
+        </div>
+    </div>
+
+
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script>
 
+
+        // for color change of the nav-bar headings on click
+        let colors = ['red', 'blue', 'green', 'orange'];
+        let navId = ['contact-us', 'documents', 'hackathon', 'timeline', 'speakers', 'about-us', 'sponsors']
+        function colorChange(event, color) {
+            navId.forEach( element => {
+                if (element == event.target.id){
+                    document.getElementById(element).style.color = colors[color];
+                } else {
+                    document.getElementById(element).style.color = "gainsboro";
+                }
+            })
+        }
+
+        
+    </script>
 </body>
 </html>
