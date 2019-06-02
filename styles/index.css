@@ -76,3 +76,66 @@ body {
     transform: translate(-50%, -100%); 
     position : absolute
 }
+
+/* Timeline Page */
+
+.timeline-box {
+    border-top : 2px solid black;
+    height : 190px
+}
+.timeline-box-left {
+    border-left : 2px solid black;            
+    border-top : 2px solid black;
+    height : 190px
+}
+.timeline-box-right {
+    border-right : 2px solid black;
+    border-top : 2px solid black;
+    height : 190px
+}
+.timeline-circle-left-top {
+    position : absolute;
+    height : 20px;
+    width : 20px;
+    border-radius : 50%;
+    left : 0;
+    top : 0;
+    transform: translate(-50%, -50%);
+    z-index: 100
+}
+.timeline-circle-left-bottom {
+    position : absolute;
+    height : 20px;
+    width : 20px;
+    border-radius : 50%;
+    left : 0;
+    bottom : 0;
+    transform: translate(-50%, 50%);
+    z-index: 100
+}
+.timeline-circle-right-top {
+    position : absolute;
+    height : 20px;
+    width : 20px;
+    border-radius : 50%;
+    right : 0;
+    top : 0;
+    transform: translate(50%, -50%);
+    z-index: 100
+}
+.timeline-circle-right-bottom{
+    position : absolute;
+    height : 20px;
+    width : 20px;
+    border-radius : 50%;
+    right : 0;
+    bottom : 0;
+    transform: translate(50%, 50%);
+    z-index: 100
+}
+.time {
+    font-weight: bolder
+}
+.event{
+    font-size : 16px
+}
