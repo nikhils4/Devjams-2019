@@ -161,7 +161,7 @@ body {
     padding-left: 20px;
     color: lightslategray;
 }
-#speakers-btn {
+.speakers-btn {
     padding : 12px 50px;
     border-radius : 5px;
     background-color: orange;
@@ -176,7 +176,7 @@ body {
 
 /* Sponsors Page */
 
-#sponsors-btn {
+.sponsors-btn {
     padding : 12px 50px;
     border-radius : 5px;
     background-color: red;
@@ -187,5 +187,20 @@ body {
     font-weight : bolder;
     border : 2px solid transparent;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
+/* Downloads page */
+
+.downloads-btn {
+    padding : 12px 40px;
+    border-radius : 5px;
+    background-color: green;
+    color : white;
+    margin-top : 22px;
+    margin-bottom : 30px;
+    outline : none;
+    font-size : 17px;
+    font-weight : bolder;
+    border : 2px solid transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
