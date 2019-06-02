@@ -139,3 +139,38 @@ body {
 .event{
     font-size : 16px
 }
+
+
+/* Speakers Page */
+
+
+.speakers-card {
+    padding: 10px 15px;
+    height: 140px
+}
+
+.speakers-pic {
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid orange
+}
+
+.speakers-details {
+    height: 120px;
+    padding-top: 10px;
+    padding-left: 20px;
+    color: lightslategray;
+}
+#speakers-btn {
+    padding : 12px 50px;
+    border-radius : 2px;
+    background-color: orange;
+    color : white;
+    margin-top : 40px;
+    outline : none;
+    font-size : 17px;
+    font-weight : bolder;
+    border : 2px solid transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
