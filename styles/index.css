@@ -68,8 +68,6 @@ body {
     }
 }
 #diag {
-    animation : diagonal  0.5s linear;
-    animation-fill-mode: forwards;
     height : 65px; 
     width :auto; 
     top : 50%; 

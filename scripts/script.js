@@ -11,3 +11,32 @@ function colorChange(event, color) {
         }
     })
 }
+
+document.getElementById("about-us").addEventListener("click", (e) => {
+    document.getElementById("diag").style.animation = "diagonal 0.5s linear";
+    document.getElementById("diag").style.animationFillMode = "forwards";
+})
+document.getElementById("hackathon").addEventListener("click", (e) => {
+    document.getElementById("diag").style.animation = "diagonal 0.5s linear";
+    document.getElementById("diag").style.animationFillMode = "forwards";
+})
+document.getElementById("timeline").addEventListener("click", (e) => {
+    document.getElementById("diag").style.animation = "diagonal 0.5s linear";
+    document.getElementById("diag").style.animationFillMode = "forwards";
+})
+document.getElementById("speakers").addEventListener("click", (e) => {
+    document.getElementById("diag").style.animation = "diagonal 0.5s linear";
+    document.getElementById("diag").style.animationFillMode = "forwards";
+})
+document.getElementById("sponsors").addEventListener("click", (e) => {
+    document.getElementById("diag").style.animation = "diagonal 0.5s linear";
+    document.getElementById("diag").style.animationFillMode = "forwards";
+})
+document.getElementById("contact-us").addEventListener("click", (e) => {
+    document.getElementById("diag").style.animation = "diagonal 0.5s linear";
+    document.getElementById("diag").style.animationFillMode = "forwards";
+})
+document.getElementById("documents").addEventListener("click", (e) => {
+    document.getElementById("diag").style.animation = "diagonal 0.5s linear";
+    document.getElementById("diag").style.animationFillMode = "forwards";
+})
