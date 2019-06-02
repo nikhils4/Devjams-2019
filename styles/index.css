@@ -1,0 +1,40 @@
+body {
+    margin : 0;
+    padding : 0
+}
+
+/* Style for Laptop screen */
+
+/* Style for home page */
+.nav-box{
+    transform: translateX(-30%);
+    height : 75px;
+    border : 8px solid transparent;
+    width : 50%
+}
+.nav-box-heading{
+    width : 130px;
+    padding-left : 10px;
+    display: inline-flex; 
+    transform: translateY(-60%); 
+    background: white;
+    position: absolute;
+    left : 25%;
+    font-size : 20px;
+    font-weight : bold;
+    color : lightgray;
+    cursor: pointer
+}
+.nav-box-right {
+    position : absolute;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    top : 30%;
+    left : -20%
+}
+.nav-box-right-heading{
+    font-size : 20px;
+    font-weight : bold;
+    color : gray;
+    width : 200px
+}
