@@ -80,17 +80,17 @@ body {
 /* Timeline Page */
 
 .timeline-box {
-    border-top : 2px solid black;
+    border-top : 4px solid black;
     height : 190px
 }
 .timeline-box-left {
-    border-left : 2px solid black;            
-    border-top : 2px solid black;
+    border-left : 4px solid black;            
+    border-top : 4px solid black;
     height : 190px
 }
 .timeline-box-right {
-    border-right : 2px solid black;
-    border-top : 2px solid black;
+    border-right : 4px solid black;
+    border-top : 4px solid black;
     height : 190px
 }
 .timeline-circle-left-top {
