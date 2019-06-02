@@ -38,3 +38,13 @@ body {
     color : gray;
     width : 200px
 }
+
+/* Style for About Page */
+.content {
+    font-size : 17px;
+    line-height : 1.7
+}
+.content-heading{
+    font-size : 15px;
+    font-weight: bolder;
+}
