@@ -48,3 +48,31 @@ body {
     font-size : 15px;
     font-weight: bolder;
 }
+
+/* Image diagonal animation */
+
+@keyframes diagonal {
+    0%{
+        height : 65px; 
+        width :auto; 
+        top : 50%; 
+        transform: translate(-50%, -100%); 
+        position : absolute
+    }
+    100% {
+        height : 30px; 
+        width :auto; 
+        top : -10%;
+        transform: translate(350px, -40px);
+        position : absolute
+    }
+}
+#diag {
+    animation : diagonal  0.5s linear;
+    animation-fill-mode: forwards;
+    height : 65px; 
+    width :auto; 
+    top : 50%; 
+    transform: translate(-50%, -100%); 
+    position : absolute
+}
