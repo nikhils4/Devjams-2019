@@ -28,32 +28,7 @@ function colorAnimate(event, color, blocknAnimate){
             document.getElementById(element).style.display = "block"
         }
     })
-    if (blocknAnimate == "about-us-top"){
-        document.getElementById("about-us-content").classList.add("animated" , "fadeInUp", "faster");
-        document.getElementById("about-us-img").classList.add("animated" ,"fadeInRight", "faster");
-    }
-    if (blocknAnimate == "hackathon-top"){
-        document.getElementById("hackathon-content").classList.add("animated" , "fadeInUp", "faster");
-        document.getElementById("hackathon-img").classList.add("animated" ,"fadeInRight", "faster");
-    }    
-    if (blocknAnimate == "timeline-top"){
-        document.getElementById("timeline-content").classList.add("animated" , "fadeInUp", "faster");
-        document.getElementById("timeline-img").classList.add("animated" ,"fadeInRight", "faster");
-    }    
-    if (blocknAnimate == "speakers-top"){
-        document.getElementById("speakers-content").classList.add("animated" , "fadeInUp", "faster");
-        document.getElementById("speakers-img").classList.add("animated" ,"fadeInRight", "faster");
-    }    
-    if (blocknAnimate == "sponsors-top"){
-        document.getElementById("sponsors-content").classList.add("animated" , "fadeInUp", "faster");
-        document.getElementById("sponsors-img").classList.add("animated" ,"fadeInRight", "faster");
-    }
-    if (blocknAnimate == "contact-us-top"){
-        document.getElementById("contact-us-content").classList.add("animated" , "fadeInUp", "faster");
-        document.getElementById("contact-us-img").classList.add("animated" ,"fadeInRight", "faster");
-    }
-    if (blocknAnimate == "downloads-top"){
-        document.getElementById("downloads-content").classList.add("animated" , "fadeInUp", "faster");
-        document.getElementById("downloads-img").classList.add("animated" ,"fadeInRight", "faster");
-    }
+    console.log(blocknAnimate.slice(0,-4));
+    document.getElementById(blocknAnimate.slice(0,-4) + "-content").classList.add("animated" , "fadeInUp", "faster");
+    document.getElementById(blocknAnimate.slice(0,-4) + "-img").classList.add("animated" ,"fadeInRight", "faster");
 }
