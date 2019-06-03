@@ -15,6 +15,12 @@ function colorChange(event, color) {
 document.getElementById("about-us").addEventListener("click", (e) => {
     document.getElementById("diag").style.animation = "diagonal 0.5s linear";
     document.getElementById("diag").style.animationFillMode = "forwards";
+    // Add none for all other 
+    document.getElementById("home-top").style.display = "none";
+    document.getElementById("about-us-top").style.display = "block"
+    document.getElementById("about-us-content").classList.add("animated" , "fadeInUp");
+    document.getElementById("about-us-img").classList.add("animated" ,"fadeInRight");
+
 })
 document.getElementById("hackathon").addEventListener("click", (e) => {
     document.getElementById("diag").style.animation = "diagonal 0.5s linear";

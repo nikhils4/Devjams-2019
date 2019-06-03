@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="./styles/index.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <title>Devfest'19</title>
 
     <style>
@@ -18,11 +20,29 @@
 
     <!-- Laptop Screen -->
 
+    <!-- Image animation -->
+
+    <div class="container-fluid" style="position : absolute; z-index : -100">
+        <div class="row" style="padding-top : 18vh;">
+            <div class="col-2" >
+
+            </div>
+            <div class="col-9" style="height : 500px">
+
+                <img id="diag" src="assets/Logo.png" style="position: absolute">
+
+            </div>
+            <div class="col-1" >
+               
+            </div>
+        </div>
+    </div>
+
     <!-- Home Page -->
 
-    <div class="container-fluid">
-        <div class="row" style="padding-top : 18vh">
-            <div class="col-2">
+    <div class="container-fluid" id="home-top">
+        <div class="row" style="padding-top : 18vh;">
+            <div class="col-2" id="home-navbar">
 
                 <div class="nav-box" style="border-top-color : red">
                     <p id="about-us" class="nav-box-heading" onclick="colorChange(event, 0)">
@@ -61,9 +81,9 @@
                 </div>
 
             </div>
-            <div class="col-9" style="text-align : center;">
+            <div class="col-9" id="home-content">
 
-                <img id="diag" src="assets/Logo.png">
+                <!-- <img id="diag" src="assets/Logo.png"> -->
 
             </div>
             <div class="col-1">
@@ -79,9 +99,9 @@
 
     <!-- About US -->
 
-    <div class="container-fluid">
-        <div class="row" style="padding-top : 18vh">
-            <div class="col-2">
+    <div class="container-fluid" id="about-us-top">
+        <div class="row" style="padding-top : 18vh;">
+            <div class="col-2" id="about-us-navbar">
 
                 <div class="nav-box" style="border-top-color : red">
                     <p id="about-us" class="nav-box-heading" onclick="colorChange(event, 0)">
@@ -120,7 +140,7 @@
                 </div>
 
             </div>
-            <div class="col-6">
+            <div class="col-6" id="about-us-content">
 
                 <div class="row">
                     <div class="col-12" style="padding-top : 20px; padding-bottom : 20px">
@@ -148,7 +168,7 @@
                 </div>
 
             </div>
-            <div class="col-4" style="margin-right : 0; text-align : right ; padding-right : 0">
+            <div class="col-4" id="about-us-img" style="margin-right : 0; text-align : right ; padding-right : 0">
                 <img src="assets/About Us.png" alt="About Us" style="width : 420px;">
             </div>
         </div>
