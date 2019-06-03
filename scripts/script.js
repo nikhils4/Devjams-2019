@@ -1,6 +1,6 @@
 
 // for color change of the nav-bar headings on click
-let colors = ['red', 'blue', 'green', 'orange'];
+let colors = ['#FE524D', '#4E96FC', '#34AD6D', '#FFC334'];
 let navId = ['contact-us', 'downloads', 'hackathon', 'timeline', 'speakers', 'about-us', 'sponsors']
 let mainPageId = ["home-top", "about-us-top", "hackathon-top", "timeline-top", "speakers-top", "sponsors-top", "contact-us-top", "downloads-top"]
 function colorAnimate(event, color, blocknAnimate){

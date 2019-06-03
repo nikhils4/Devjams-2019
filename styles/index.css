@@ -1,6 +1,12 @@
 body {
     margin : 0;
-    padding : 0
+    padding : 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+@font-face {
+    font-family: gilroy;
+    src: url(assets/gilroy-bold-cufonfonts-webfont/gilroy-Bold.woff);
 }
 
 /* Style for Laptop screen */
@@ -13,6 +19,7 @@ body {
     width : 50%
 }
 .nav-box-heading{
+    font-family: 'gilroy';
     width : 130px;
     padding-left : 10px;
     display: inline-flex; 
@@ -36,7 +43,8 @@ body {
     font-size : 20px;
     font-weight : bold;
     color : gray;
-    width : 200px
+    width : 200px;
+    font-family : gilroy
 }
 
 /* Style for About Page */
@@ -47,6 +55,7 @@ body {
 .content-heading{
     font-size : 15px;
     font-weight: bolder;
+    font-family: gilroy
 }
 
 /* Image diagonal animation */
@@ -133,7 +142,8 @@ body {
     z-index: 100
 }
 .time {
-    font-weight: bolder
+    font-weight: bolder;
+    font-family: gilroy
 }
 .event{
     font-size : 16px
@@ -151,7 +161,7 @@ body {
 .speakers-pic {
     height: 120px;
     border-radius: 50%;
-    border: 2px solid orange
+    border: 2px solid #FFC334
 }
 
 .speakers-details {
@@ -163,7 +173,7 @@ body {
 .speakers-btn {
     padding : 12px 50px;
     border-radius : 5px;
-    background-color: orange;
+    background-color: #FFC334;
     color : white;
     margin-top : 40px;
     outline : none;
@@ -178,7 +188,7 @@ body {
 .sponsors-btn {
     padding : 12px 50px;
     border-radius : 5px;
-    background-color: red;
+    background-color: #FE524D;
     color : white;
     margin-top : 40px;
     outline : none;
@@ -193,7 +203,7 @@ body {
 .downloads-btn {
     padding : 12px 40px;
     border-radius : 5px;
-    background-color: green;
+    background-color: #34AD6D;
     color : white;
     margin-top : 22px;
     margin-bottom : 30px;
