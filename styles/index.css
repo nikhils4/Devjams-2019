@@ -6,7 +6,11 @@ body {
 
 @font-face {
     font-family: gilroy;
-    src: url(assets/gilroy-bold-cufonfonts-webfont/gilroy-Bold.woff);
+    src: url(../assets/gilroy-bold-cufonfonts-webfont/gilroy-Bold.woff);
+}
+@font-face {
+    font-family: gilroy-light;
+    src: url(../assets/gilroy-bold-cufonfonts-webfont/gilroy-Light.woff);
 }
 
 /* Style for Laptop screen */
