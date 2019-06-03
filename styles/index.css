@@ -218,13 +218,59 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* General animation related css */
+/* General animation related css for laptop screen*/
 #about-us-top,
 #hackathon-top,
 #timeline-top,
 #speakers-top,
 #sponsors-top,
 #contact-us-top,
-#downloads-top {
+#downloads-top,
+#previous-events-top {
     display : none
 }
+
+/* previous events */
+
+.nav-box-pre{
+    transform: translateX(-50%);
+    height : 75px;
+    border : 8px solid transparent;
+    width : 100%
+}
+.nav-box-heading-pre{
+    font-family: 'gilroy';
+    width : 900px;
+    padding-left : 20px;
+    display: inline-flex; 
+    transform: translateY(-60%); 
+    background: white;
+    position: absolute;
+    left : 51%;
+    font-size : 40px;
+    font-weight : bold;
+    color : #141414;
+    cursor: pointer
+}
+
+.back-btn-pre{
+    padding-left : 35px; 
+    color : #FFC334; 
+    font-family: gilroy; 
+    font-size : 25px
+}
+.img-container-pre{
+    width : 170px;
+    height : 170px;
+    border : 2px solid black;
+    display: inline-block;
+    margin : 20px 20px 10px 10px
+}
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+.scrolling-wrapper {
+    -webkit-overflow-scrolling: touch;
+  }

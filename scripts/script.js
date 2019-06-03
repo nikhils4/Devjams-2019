@@ -32,3 +32,19 @@ function colorAnimate(event, color, blocknAnimate){
     document.getElementById(blocknAnimate.slice(0,-4) + "-content").classList.add("animated" , "fadeInUp", "faster");
     document.getElementById(blocknAnimate.slice(0,-4) + "-img").classList.add("animated" ,"fadeInRight", "faster");
 }
+
+document.getElementById("back-btn").addEventListener("click", (e) => {
+    document.getElementById("previous-events-top").style.display = "none";
+    document.getElementById("home-top").style.display = "block";
+    document.getElementById("home-top").classList.add("animated" ,"fadeInUp", "faster");
+    document.getElementById("img-top").style.display = "block";
+} )
+
+document.getElementsByClassName("nav-box-right-heading")[0].addEventListener("click", (e) => {
+    mainPageId.forEach( element => {
+        document.getElementById(element).style.display = "none"
+    })
+    document.getElementById("img-top").style.display = "none";
+    document.getElementById("previous-events-top").style.display = "block";
+    document.getElementById("previous-events-top").classList.add("animated" ,"fadeInRight", "faster");
+} )
