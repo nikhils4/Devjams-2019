@@ -1,48 +1,568 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="./styles/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/test.css">
     <title>Devfest'19</title>
-    <style>
-
-
-    </style>
 </head>
+
 <body>
 
-    <div class="container-fluid" >
-        <div class="row">
-            <div class="col-12" style="height : 150px; border : 2px solid orange">
+    <!-- Image animation -->
+    <img id="sm-diag" src="assets/Logo.png">
 
-            </div>
+    <!-- Navbar scolling -->
+    <div class="card" id="nav-top">
+        <div class="card--content" id="about-us" onclick="navAnimate()">
+            <p class="sm-nav-content">
+                About Us
+            </p>
         </div>
-        <div class="row">
-            <div class="col-3" style="border : 2px solid blue; height : 400px"></div>
-            <div class="col-6" style="border : 2px solid black;">
+        <div class="card--content">
+            <p class="sm-nav-content">
+                Hackathon
+            </p>
+        </div>
+        <div class="card--content">
+            <p class="sm-nav-content">
+                Timeline
+            </p>
+        </div>
+        <div class="card--content">
+            <p class="sm-nav-content">
+                Speakers
+            </p>
+        </div>
+        <div class="card--content">
+            <p class="sm-nav-content">
+                Sponsors
+            </p>
+        </div>
+        <div class="card--content">
+            <p class="sm-nav-content">
+                Contact Us
+            </p>
+        </div>
+        <div class="card--content">
+            <p class="sm-nav-content">
+                Documents
+            </p>
+        </div>
+        <div class="card--content">
+            <p class="sm-nav-content">
+                Previous Events
+            </p>
+        </div>
+    </div>
 
-                <div id="diag" style="height : 100px; width : 200px; position : absolute; border : 2px solid green; right : 0;"></div>
+    <!-- About Us -->
 
+    <div id="sm-about-us-top">
+        <div class="col-12" style="text-align: right">
+            <img src="./assets/About Us.png" style="width: 170px">
+        </div>
+        <div class="sm-content-cover">
+            <div class="col-12 sm-heading" >
+                <p>ABOUT VIT</p>
             </div>
-            <div class="col-3" style="border : 2px solid blue; height : 400px"></div>
+            <div class="col-12 sm-content" >
+                <p>
+                    Vellore Institute of Technology, Vellore VIT, Vellore is one of the top-rated engineering colleges
+                    in
+                    India. Diversity is the strongest aspect of the institute and the students from various states and
+                    nations, the key to its reputation. The university works on ideas and executes tasks of different
+                    domains under Clubs and Chapters.
+                </p>
+            </div>
+            <div class="col-12 sm-heading">
+                <p>ABOUT US</p>
+            </div>
+            <div class="col-12 sm-content" >
+                <p>
+                    Developer Student Clubs VIT, powered by Google Developers, is a non-profit community that aims to
+                    inspire young and intelligent minds in the field of technology and provides a platform to learn,
+                    develop
+                    and innovate. The designers, developers and managers work together and carry out really effective
+                    executions and this collaboration helps them to grow in every aspect of life.
+                </p>
+            </div>
         </div>
     </div>
 
 
+    <!-- Hackathon -->
+    <div id="sm-hackathon-top" >
+        <div class="col-12" style="text-align: right">
+            <img src="./assets/Hackathon.png" style="width: 170px">
+        </div>
+        <div class="sm-content-cover">
+            <div class="col-12 sm-content"
+                <p>
+                    The 48-hour hackathon provides a platform to the young, talented and aspiring coders, developers and
+                    designers to showcase their inventiveness and creativity. DevFest by DSC VIT is a one-stop
+                    destination which brings to you plentiful opportunities to improve your skill set and to build
+                    something new and exemplary.
+                </p>
+            </div>
+            <div class="col-12 sm-content">
+                <p>
+                    As Einstein said “The only source of knowledge is experience”, Devfest 2019 also gives you a chance
+                    to work and innovate under the guidance of highly knowledgeable and experienced mentors. Become a
+                    part of the most rewarding hack ever to learn something new and dive into the ocean full of
+                    opportunities.
+                </p>
+            </div>
+        </div>
+    </div>
 
-    <style>
+
+    <!-- Timeline -->
+
+    <div class="sm-timeline-top" style="margin-top : 40px">
+        <div class="col-12">
+            <div class="sm-timeline-box">
+                <div class="sm-timeline-circle" style="background-color : #34AD6D"></div>
+                <div class="sm-time-event-cover">
+                    <p class="sm-timeline-time">
+                        8:00 AM - 10:30 AM
+                    </p>
+                    <p class="sm-timeline-event">
+                        Registration Begins
+                    </p>
+                </div>
+            </div>
+            <div class="sm-timeline-box">
+                <div class="sm-timeline-circle" style="background-color : #34AD6D"></div>
+                <div class="sm-time-event-cover">
+                    <p class="sm-timeline-time">
+                        10:30 AM
+                    </p>
+                    <p class="sm-timeline-event">
+                        Decalre Hack Open
+                    </p>
+                </div>
+            </div>
+            <div class="sm-timeline-box">
+                <div class="sm-timeline-circle" style="background-color : #4E96FC"></div>
+                <div class="sm-time-event-cover">
+                    <p class="sm-timeline-time">
+                        12:00 PM - 2:00 PM
+                    </p>
+                    <p class="sm-timeline-event">
+                        Develop, Design and Innovate!
+                    </p>
+                </div>
+            </div>
+            <div class="sm-timeline-box">
+                <div class="sm-timeline-circle" style="background-color : #4E96FC"></div>
+                <div class="sm-time-event-cover">
+                    <p class="sm-timeline-time">
+                        3:00 PM - 9:00 PM
+                    </p>
+                    <p class="sm-timeline-event">
+                        Inventive Challenges and Hackathon
+                    </p>
+                </div>
+            </div>
+            <div class="sm-timeline-box">
+                <div class="sm-timeline-circle" style="background-color: #FFC334"></div>
+                <div class="sm-time-event-cover">
+                    <p class="sm-timeline-time">
+                        9:00 PM - 9:30 PM
+                    </p>
+                    <p class="sm-timeline-event">
+                        Attendance and Snacking
+                    </p>
+                </div>
+            </div>
+            <div class="sm-timeline-box">
+                <div class="sm-timeline-circle" style="background-color: #FFC334"></div>
+                <div class="sm-time-event-cover">
+                    <p class="sm-timeline-time">
+                        9:30 PM - 10:30 PM
+                    </p>
+                    <p class="sm-timeline-event">
+                        Dinner
+                    </p>
+                </div>
+            </div>
+            <div class="sm-timeline-box">
+                <div class="sm-timeline-circle" style="background-color : #4E96FC"></div>
+                <div class="sm-time-event-cover">
+                    <p class="sm-timeline-time">
+                        10:30 PM
+                    </p>
+                    <p class="sm-timeline-event">
+                        Tech Review 1
+                    </p>
+                </div>
+            </div>
+            <div class="sm-timeline-box">
+                <div class="sm-timeline-circle" style="background-color: #FE524D"></div>
+                <div class="sm-time-event-cover">
+                    <p class="sm-timeline-time">
+                        12:00 PM - 1:00 AM
+                    </p>
+                    <p class="sm-timeline-event">
+                        Quiz
+                    </p>
+                </div>
+            </div>
+            <div class="sm-timeline-box">
+                <div class="sm-timeline-circle" style="background-color: #FE524D"></div>
+                <div class="sm-time-event-cover">
+                    <p class="sm-timeline-time">
+                        1:00 AM - 3:00 AM
+                    </p>
+                    <p class="sm-timeline-event">
+                        Some coding, some dozing!
+                    </p>
+                </div>
+            </div>
+            <div class="sm-timeline-box">
+                <div class="sm-timeline-circle" style="background-color: #FFC334"></div>
+                <div class="sm-time-event-cover">
+                    <p class="sm-timeline-time">
+                        3:00 AM
+                    </p>
+                    <p class="sm-timeline-event">
+                        Snacks
+                    </p>
+                </div>
+            </div>
+            <div class="sm-timeline-box">
+                <div class="sm-timeline-circle" style="background-color : #4E96FC"></div>
+                <div class="sm-time-event-cover">
+                    <p class="sm-timeline-time">
+                        3:00 AM - 6:00 AM
+                    </p>
+                    <p class="sm-timeline-event">
+                        Hack resumes
+                    </p>
+                </div>
+            </div>
+            <div class="sm-timeline-box">
+                <div class="sm-timeline-circle" style="background-color : #34AD6D"></div>
+                <div class="sm-time-event-cover">
+                    <p class="sm-timeline-time">
+                        6:00 AM - 11:00 AM
+                    </p>
+                    <p class="sm-timeline-event">
+                        Break
+                    </p>
+                </div>
+            </div>
+            <div class="sm-timeline-box">
+                <div class="sm-timeline-circle" style="background-color : #4E96FC"></div>
+                <div class="sm-time-event-cover">
+                    <p class="sm-timeline-time">
+                        11:00 AM - 2:00 PM
+                    </p>
+                    <p class="sm-timeline-event">
+                        Technical Review 2
+                    </p>
+                </div>
+            </div>
+            <div class="sm-timeline-box">
+                <div class="sm-timeline-circle" style="background-color: #FE524D"></div>
+                <div class="sm-time-event-cover">
+                    <p class="sm-timeline-time">
+                        1:00 PM - 3:00 PM
+                    </p>
+                    <p class="sm-timeline-event">
+                        Incubation Sessions
+                    </p>
+                </div>
+            </div>
+            <div class="sm-timeline-box">
+                <div class="sm-timeline-circle" style="background-color : #4E96FC"></div>
+                <div class="sm-time-event-cover">
+                    <p class="sm-timeline-time">
+                        4:00 PM - 7:00 PM
+                    </p>
+                    <p class="sm-timeline-event">
+                        Pitching the extraordinary
+                    </p>
+                </div>
+            </div>
+            <div class="sm-timeline-box">
+                <div class="sm-timeline-circle" style="background-color: #FFC334"></div>
+                <div class="sm-time-event-cover">
+                    <p class="sm-timeline-time">
+                        7:00 PM - 8:00 PM
+                    </p>
+                    <p class="sm-timeline-event">
+                        Prize Distribution
+                    </p>
+                </div>
+            </div>
+            <div class="sm-timeline-box">
+                <div class="sm-timeline-circle" style="background-color: #34AD6D"></div>
+                <div class="sm-time-event-cover">
+                    <p class="sm-timeline-time">
+                        2:00 PM - 4:00 PM
+                    </p>
+                    <p class="sm-timeline-event">
+                        Lunch
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sm-speakers-top">
+        <div class="col-12" style="text-align: right">
+            <img src="./assets/Speakers.png" style="width: 170px">
+        </div>
+        <div class="col-12" style="margin-top :60px">
+            <div class="col-12" style="text-align : center">
+                <div class="sm-avatar-cover">
+                    <div class="sm-avatar"></div>
+                </div>
+                <div class="sm-details-cover">
+                    <div class="col-12">
+                        <p class="sm-speakers-name">
+                            Name of the speaker
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <p class="sm-speakers-details">
+                            Position of the person
+                            <br>
+                            Company
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12" style="text-align : center">
+                <div class="sm-avatar-cover">
+                    <div class="sm-avatar"></div>
+                </div>
+                <div class="sm-details-cover">
+                    <div class="col-12">
+                        <p class="sm-speakers-name">
+                            Name of the speaker
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <p class="sm-speakers-details">
+                            Position of the person
+                            <br>
+                            Company
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12" style="text-align : center">
+                <div class="sm-avatar-cover">
+                    <div class="sm-avatar"></div>
+                </div>
+                <div class="sm-details-cover">
+                    <div class="col-12">
+                        <p class="sm-speakers-name">
+                            Name of the speaker
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <p class="sm-speakers-details">
+                            Position of the person
+                            <br>
+                            Company
+                        </p>
+                    </div>
+                </div>
+            </div>
 
 
-    </style>
-    
+            <div class="col-12" style="text-align : center">
+                <div class="sm-avatar-cover">
+                    <div class="sm-avatar"></div>
+                </div>
+                <div class="sm-details-cover">
+                    <div class="col-12">
+                        <p class="sm-speakers-name">
+                            Name of the speaker
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <p class="sm-speakers-details">
+                            Position of the person
+                            <br>
+                            Company
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12" style="text-align : center">
+                <div class="sm-avatar-cover">
+                    <div class="sm-avatar"></div>
+                </div>
+                <div class="sm-details-cover">
+                    <div class="col-12">
+                        <p class="sm-speakers-name">
+                            Name of the speaker
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <p class="sm-speakers-details">
+                            Position of the person
+                            <br>
+                            Company
+                        </p>
+                    </div>
+                </div>
+            </div>
 
 
+            <div class="col-12" style="text-align : center">
+                <div class="sm-avatar-cover">
+                    <div class="sm-avatar"></div>
+                </div>
+                <div class="sm-details-cover">
+                    <div class="col-12">
+                        <p class="sm-speakers-name">
+                            Name of the speaker
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <p class="sm-speakers-details">
+                            Position of the person
+                            <br>
+                            Company
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <div class="col-12" style="text-align : center">
+                <button class="sm-speakers-btn">
+                    Join us as a speaker
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sponsors -->
+
+    <div id="sm-sponsors-top">
+        <div class="col-12" style="text-align : right">
+            <img src="./assets/Sponsors.png" style="width: 170px">
+        </div>
+        <div class="col-12">
+            <!-- Space to add sponsors -->
+        </div>
+        <div class="col-12" style="text-align : center">
+            <button class="sm-sponsors-btn">
+                Join us as a sponsor
+            </button>
+        </div>
+    </div>
+
+    <!-- Contact Us -->
+
+    <div id="sm-contact-us-top" style="margin-top : 50px">
+        <div class="col-12" style="text-align: right">
+            <img src="./assets/Contact us.png" style="width: 170px">
+        </div>
+        <div class="col-12" style="text-align : center">
+            <div class="sm-contact-us-cover">
+                <div class="sm-contact-us-details">
+                    Samarth Nayyar<br>
+                    Community Lead
+                </div>
+                <div class="sm-contact-us-number">
+                    +91 9818288112
+                </div>
+            </div>
+            <div class="sm-contact-us-cover">
+                <div class="sm-contact-us-details">
+                    Jayakrishna Gupta<br>
+                    Management Lead
+                </div>
+                <div class="sm-contact-us-number">
+                    +91 7092429996
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12" style="text-align : center; margin-top : 30px">
+            <button class="sm-sponsors-btn">
+                Join us as a sponsor
+            </button>
+        </div>
+
+        <div class="col-12" style="text-align : center; margin-top : 30px">
+            <button class="sm-speakers-btn">
+                Join us as a speaker
+            </button>
+        </div>
+    </div>
+
+    <!-- Downloads -->
+
+
+    <div id="sm-downloads-top" style="margin-top : 50px">
+        <div class="col-12" style="text-align: right">
+            <img src="./assets/FAQ's.png" style="width: 170px">
+        </div>
+
+        <div class="col-12" style="text-align : center; margin-top : 30px">
+            <p class="sm-downloads-head">
+                Brochure
+            </p>
+            <button class="sm-downloads-btn">
+                Downloads
+            </button>
+        </div>
+
+        <div class="col-12" style="text-align : center; margin-top : 30px">
+            <p class="sm-downloads-head">
+                Terms and Conditions
+            </p>
+            <button class="sm-downloads-btn">
+                Downloads
+            </button>
+        </div>
+
+        <div class="col-12" style="text-align : center; margin-top : 30px">
+            <p class="sm-downloads-head">
+                FAQ's
+            </p>
+            <button class="sm-downloads-btn">
+                Downloads
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function navAnimate() {
+            document.getElementById("nav-top").style.animation = "sm-navbar-animate 0.4s linear";
+            document.getElementById("nav-top").style.animationFillMode = "forwards";
+            document.getElementById("about-us").style.animation = "sm-aboutUs-animate 0.4s linear";
+            document.getElementById("about-us").style.animationFillMode = "forwards";
+            document.getElementById("sm-diag").style.animation = "sm-diagonal-logo 0.4s linear";
+            document.getElementById("sm-diag").style.animationFillMode = "forwards";
+            document.getElementById("about-us").style.paddingLeft = "200px";
+        } </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
