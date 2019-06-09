@@ -16,43 +16,43 @@
 
     <!-- Navbar scolling -->
     <div class="card" id="nav-top">
-        <div class="card--content" id="about-us" onclick="navAnimate()">
-            <p class="sm-nav-content">
+        <div class="card--content">
+            <p class="sm-nav-content" id="sm-about-us" onclick="navAnimate(); smColorUpdate(event, 0)">
                 About Us
             </p>
         </div>
         <div class="card--content">
-            <p class="sm-nav-content">
+            <p class="sm-nav-content" id="sm-hackathon" onclick="smColorUpdate(event, 1)">
                 Hackathon
             </p>
         </div>
         <div class="card--content">
-            <p class="sm-nav-content">
+            <p class="sm-nav-content" id="sm-timeline" onclick="smColorUpdate(event, 2)">
                 Timeline
             </p>
         </div>
         <div class="card--content">
-            <p class="sm-nav-content">
+            <p class="sm-nav-content" id="sm-speakers" onclick="smColorUpdate(event, 3)">
                 Speakers
             </p>
         </div>
         <div class="card--content">
-            <p class="sm-nav-content">
+            <p class="sm-nav-content" id="sm-sponsors" onclick="smColorUpdate(event, 0)">
                 Sponsors
             </p>
         </div>
         <div class="card--content">
-            <p class="sm-nav-content">
+            <p class="sm-nav-content" id="sm-contact-us" onclick="smColorUpdate(event, 1)">
                 Contact Us
             </p>
         </div>
         <div class="card--content">
-            <p class="sm-nav-content">
+            <p class="sm-nav-content" id="sm-downloads" onclick="smColorUpdate(event, 2)">
                 Documents
             </p>
         </div>
         <div class="card--content">
-            <p class="sm-nav-content">
+            <p class="sm-nav-content" id="sm-prev-events" onclick="smColorUpdate(event, 3)">
                 Previous Events
             </p>
         </div>
@@ -65,10 +65,10 @@
             <img src="./assets/About Us.png" style="width: 170px">
         </div>
         <div class="sm-content-cover">
-            <div class="sm-col-12 sm-heading" >
+            <div class="sm-col-12 sm-heading">
                 <p>ABOUT VIT</p>
             </div>
-            <div class="sm-col-12 sm-content" >
+            <div class="sm-col-12 sm-content">
                 <p>
                     Vellore Institute of Technology, Vellore VIT, Vellore is one of the top-rated engineering colleges
                     in
@@ -80,7 +80,7 @@
             <div class="sm-col-12 sm-heading">
                 <p>ABOUT US</p>
             </div>
-            <div class="sm-col-12 sm-content" >
+            <div class="sm-col-12 sm-content">
                 <p>
                     Developer Student Clubs VIT, powered by Google Developers, is a non-profit community that aims to
                     inspire young and intelligent minds in the field of technology and provides a platform to learn,
@@ -94,17 +94,16 @@
 
 
     <!-- Hackathon -->
-    <div id="sm-hackathon-top" >
+    <div id="sm-hackathon-top">
         <div class="sm-col-12" style="text-align: right">
             <img src="./assets/Hackathon.png" style="width: 170px">
         </div>
         <div class="sm-content-cover">
-            <div class="sm-col-12 sm-content"
-                <p>
-                    The 48-hour hackathon provides a platform to the young, talented and aspiring coders, developers and
-                    designers to showcase their inventiveness and creativity. DevFest by DSC VIT is a one-stop
-                    destination which brings to you plentiful opportunities to improve your skill set and to build
-                    something new and exemplary.
+            <div class="sm-col-12 sm-content" <p>
+                The 48-hour hackathon provides a platform to the young, talented and aspiring coders, developers and
+                designers to showcase their inventiveness and creativity. DevFest by DSC VIT is a one-stop
+                destination which brings to you plentiful opportunities to improve your skill set and to build
+                something new and exemplary.
                 </p>
             </div>
             <div class="sm-col-12 sm-content">
@@ -545,12 +544,24 @@
         function navAnimate() {
             document.getElementById("nav-top").style.animation = "sm-navbar-animate 0.4s linear";
             document.getElementById("nav-top").style.animationFillMode = "forwards";
-            document.getElementById("about-us").style.animation = "sm-aboutUs-animate 0.4s linear";
-            document.getElementById("about-us").style.animationFillMode = "forwards";
+            document.getElementById("sm-about-us").style.animation = "sm-aboutUs-animate 0.4s linear";
+            document.getElementById("sm-about-us").style.animationFillMode = "forwards";
             document.getElementById("sm-diag").style.animation = "sm-diagonal-logo 0.4s linear";
             document.getElementById("sm-diag").style.animationFillMode = "forwards";
-            document.getElementById("about-us").style.paddingLeft = "200px";
-        } </script>
+            document.getElementById("sm-about-us").style.paddingLeft = "200px";
+        }
+
+        function smColorUpdate(e, int) {
+            let colors = ['#FE524D', '#4E96FC', '#34AD6D', '#FFC334'];
+            let navId = ["sm-about-us", "sm-hackathon", "sm-downloads", "sm-speakers", "sm-sponsors", "sm-prev-events", "sm-timeline", "sm-contact-us"]
+            navId.forEach(element => {
+                if (element == event.target.id) {
+                    document.getElementById(element).style.color = colors[int];
+                } else {
+                    document.getElementById(element).style.color  = "gainsboro";
+                }
+            })
+        }</script>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
