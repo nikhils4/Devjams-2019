@@ -29,19 +29,21 @@
 
   /* Navbar Styling */
   .card {
+      background: #ecf0f1;
       display: flex;
       min-width: 100%;
-      min-height: 70px;
-      overflow-x: auto;
+      overflow-x: scroll;
       margin-top: 50vh;
-      transform: translateY(-80%)
+      transform: translateY(-80%);
   }
 
   .card::-webkit-scrollbar {
       display: none;
+
   }
 
   .card--content {
+      text-align : center;
       min-width: 200px;
   }
 

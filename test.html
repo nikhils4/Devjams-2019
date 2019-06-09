@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/test.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <title>Devfest'19</title>
 </head>
 
@@ -568,7 +570,8 @@
                 console.log(e.target.id + "-top")
                 if(ele == e.target.id + "-top"){
                     console.log("Dikhega")
-                    document.getElementById(ele).style.display = "block"
+                    document.getElementById(ele).style.display = "block";
+                    document.getElementById(ele).classList.add("animated" , "fadeInUp", "faster");
                 } else {
                     console.log("Hide")
                     document.getElementById(ele).style.display = "none"
