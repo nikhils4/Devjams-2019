@@ -120,7 +120,7 @@
 
     <!-- Timeline -->
 
-    <div class="sm-timeline-top" style="margin-top : 40px">
+    <div id="sm-timeline-top" style="margin-top : 40px">
         <div class="sm-col-12">
             <div class="sm-timeline-box">
                 <div class="sm-timeline-circle" style="background-color : #34AD6D"></div>
@@ -312,7 +312,7 @@
         </div>
     </div>
 
-    <div class="sm-speakers-top">
+    <div id="sm-speakers-top">
         <div class="sm-col-12" style="text-align: right">
             <img src="./assets/Speakers.png" style="width: 170px">
         </div>
@@ -551,14 +551,27 @@
             document.getElementById("sm-about-us").style.paddingLeft = "200px";
         }
 
+        let colors = ['#FE524D', '#4E96FC', '#34AD6D', '#FFC334'];
+        let navId = ["sm-about-us", "sm-hackathon", "sm-downloads", "sm-speakers", "sm-sponsors", "sm-prev-events", "sm-timeline", "sm-contact-us"]
+        let smMainPageId = [ "sm-about-us-top", "sm-hackathon-top", "sm-timeline-top", "sm-speakers-top", "sm-sponsors-top", "sm-contact-us-top", "sm-downloads-top", "sm-prev-events"]
+
+
         function smColorUpdate(e, int) {
-            let colors = ['#FE524D', '#4E96FC', '#34AD6D', '#FFC334'];
-            let navId = ["sm-about-us", "sm-hackathon", "sm-downloads", "sm-speakers", "sm-sponsors", "sm-prev-events", "sm-timeline", "sm-contact-us"]
             navId.forEach(element => {
-                if (element == event.target.id) {
+                if (element == e.target.id) {
                     document.getElementById(element).style.color = colors[int];
                 } else {
                     document.getElementById(element).style.color  = "gainsboro";
+                }
+            })
+            smMainPageId.forEach( ele => {
+                console.log(e.target.id + "-top")
+                if(ele == e.target.id + "-top"){
+                    console.log("Dikhega")
+                    document.getElementById(ele).style.display = "block"
+                } else {
+                    console.log("Hide")
+                    document.getElementById(ele).style.display = "none"
                 }
             })
         }</script>

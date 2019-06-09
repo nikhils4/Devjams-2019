@@ -218,3 +218,16 @@
   .sm-downloads-head{
 
   }
+
+  /* Animation init related css */
+
+  #sm-about-us-top, 
+  #sm-hackathon-top, 
+  #sm-timeline-top, 
+  #sm-speakers-top, 
+  #sm-sponsors-top, 
+  #sm-contact-us-top, 
+  #sm-downloads-top,
+  #sm-prev-events {
+      display: none
+  }
