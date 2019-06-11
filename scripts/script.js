@@ -50,6 +50,10 @@ document.getElementsByClassName("nav-box-right-heading")[0].addEventListener("cl
 } )
 
 
+
+
+
+
 function navAnimate() {
     document.getElementById("nav-top").style.animation = "sm-navbar-animate 0.4s linear";
     document.getElementById("nav-top").style.animationFillMode = "forwards";
@@ -57,11 +61,21 @@ function navAnimate() {
     document.getElementById("sm-about-us").style.animationFillMode = "forwards";
     document.getElementById("sm-diag").style.animation = "sm-diagonal-logo 0.4s linear";
     document.getElementById("sm-diag").style.animationFillMode = "forwards";
-    document.getElementById("sm-about-us").style.paddingLeft = "200px";
+    document.getElementById("sm-about-us").style.paddingLeft = "150px";
 }
 
+// function navAnimateGeneral() {
+//     document.getElementById("nav-top").style.animation = "sm-navbar-animate 0.4s linear";
+//     document.getElementById("nav-top").style.animationFillMode = "forwards";
+//     document.getElementById("sm-about-us").style.animation = "sm-aboutUs-animate 0.4s linear";
+//     document.getElementById("sm-about-us").style.animationFillMode = "forwards";
+//     document.getElementById("sm-diag").style.animation = "sm-diagonal-logo 0.4s linear";
+//     document.getElementById("sm-diag").style.animationFillMode = "forwards";
+//     document.getElementById("sm-about-us").style.paddingLeft = "150px";
+// }
+
 let smnavId = ["sm-about-us", "sm-hackathon", "sm-downloads", "sm-speakers", "sm-sponsors", "sm-prev-events", "sm-timeline", "sm-contact-us"]
-let smMainPageId = [ "sm-about-us-top", "sm-hackathon-top", "sm-timeline-top", "sm-speakers-top", "sm-sponsors-top", "sm-contact-us-top", "sm-downloads-top", "sm-prev-events"]
+let smMainPageId = [ "sm-about-us-top", "sm-hackathon-top", "sm-timeline-top", "sm-speakers-top", "sm-sponsors-top", "sm-contact-us-top", "sm-downloads-top", "sm-prev-events-top"]
 
 
 function smColorUpdate(e, int) {
@@ -75,11 +89,9 @@ function smColorUpdate(e, int) {
     smMainPageId.forEach( ele => {
         console.log(e.target.id + "-top")
         if(ele == e.target.id + "-top"){
-            console.log("Dikhega")
             document.getElementById(ele).style.display = "block";
             document.getElementById(ele).classList.add("animated" , "fadeInUp", "faster");
         } else {
-            console.log("Hide")
             document.getElementById(ele).style.display = "none"
         }
     })
