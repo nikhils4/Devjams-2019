@@ -65,7 +65,6 @@
       text-align : center;
       min-width: 150px;
       height : auto;
-      border-top : 10px solid #ecf0f1
   }
 
   /* Navbar animation */
@@ -125,13 +124,14 @@
 
   /* Navbar */
   .sm-nav-content {
-      /* font-family: 'gilroy'; */
+      font-family: 'gilroy';
       padding-left: 10px;
-      background: white;
+      background: #ecf0f1;
       font-size: 20px;
       font-weight: bold;
       color: lightgray;
-      cursor: pointer
+      cursor: pointer;
+
   }
 
   /* Timeline */
@@ -215,8 +215,7 @@
       font-weight: bolder;
       background: #FFC334;
       padding: 15px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+      box-shadow: 0 0 6px 0 rgba(184, 185, 184, 0.6);  }
 
   /* Sponsors */
   .sm-sponsors-btn {
@@ -228,7 +227,7 @@
       font-weight: bolder;
       background: #FE524D;
       padding: 15px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      box-shadow: 0 0 6px 0 rgba(184, 185, 184, 0.6);
   }
 
   /* Contact Us */
@@ -259,8 +258,9 @@
       font-weight: bolder;
       background: #34AD6D;
       padding: 15px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+      box-shadow: 0 0 6px 0 rgba(184, 185, 184, 0.6);  
+    }
+
   .sm-downloads-head{
     font-size : 21px;
     font-weight : bolder;
