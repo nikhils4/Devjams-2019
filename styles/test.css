@@ -1,4 +1,14 @@
-  /* General styling */
+  
+  @media (max-width : 700px){
+    /* General styling */
+
+    #largeView {
+        display: none
+    }
+
+    #phoneView {
+        display: block;
+    }
   html,
   body {
       width: 100%;
@@ -28,7 +38,7 @@
   }
 
   /* Navbar Styling */
-  .card {
+  .sm-card {
       background: #ecf0f1;
       display: flex;
       min-width: 100%;
@@ -233,3 +243,6 @@
   #sm-prev-events {
       display: none
   }
+  }
+  
+  

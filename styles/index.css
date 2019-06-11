@@ -1,276 +1,289 @@
-body {
-    margin : 0;
-    padding : 0;
-    font-family: 'Work Sans', sans-serif;
-}
 
-@font-face {
-    font-family: gilroy;
-    src: url(../assets/gilroy-bold-cufonfonts-webfont/gilroy-Bold.woff);
-}
-@font-face {
-    font-family: gilroy-light;
-    src: url(../assets/gilroy-bold-cufonfonts-webfont/gilroy-Light.woff);
-}
+@media (min-width : 700px){
 
-/* Style for Laptop screen */
+    #largeView {
+        display: block
+    }
 
-/* Style for home page */
-.nav-box{
-    transform: translateX(-30%);
-    height : 75px;
-    border : 8px solid transparent;
-    width : 50%
-}
-.nav-box-heading{
-    font-family: 'gilroy';
-    width : 130px;
-    padding-left : 10px;
-    display: inline-flex; 
-    transform: translateY(-60%); 
-    background: white;
-    position: absolute;
-    left : 25%;
-    font-size : 20px;
-    font-weight : bold;
-    color : lightgray;
-    cursor: pointer
-}
-.nav-box-right {
-    position : absolute;
-    transform: rotate(-90deg);
-    transform-origin: center;
-    top : 30%;
-    left : -20%
-}
-.nav-box-right-heading{
-    font-size : 20px;
-    font-weight : bold;
-    color : gray;
-    width : 200px;
-    font-family : gilroy
-}
-
-/* Style for About Page */
-.content {
-    font-size : 17px;
-    line-height : 1.7
-}
-.content-heading{
-    font-size : 15px;
-    font-weight: bolder;
-    font-family: gilroy
-}
-
-/* Image diagonal animation */
-
-@keyframes diagonal {
-    0%{
+    #phoneView {
+        display: none;
+    }
+    body {
+        margin : 0;
+        padding : 0;
+        font-family: 'Work Sans', sans-serif;
+    }
+    
+    @font-face {
+        font-family: gilroy;
+        src: url(../assets/gilroy-bold-cufonfonts-webfont/gilroy-Bold.woff);
+    }
+    @font-face {
+        font-family: gilroy-light;
+        src: url(../assets/gilroy-bold-cufonfonts-webfont/gilroy-Light.woff);
+    }
+    
+    /* Style for Laptop screen */
+    
+    /* Style for home page */
+    .nav-box{
+        transform: translateX(-30%);
+        height : 75px;
+        border : 8px solid transparent;
+        width : 50%
+    }
+    .nav-box-heading{
+        font-family: 'gilroy';
+        width : 130px;
+        padding-left : 10px;
+        display: inline-flex; 
+        transform: translateY(-60%); 
+        background: white;
+        position: absolute;
+        left : 25%;
+        font-size : 20px;
+        font-weight : bold;
+        color : lightgray;
+        cursor: pointer
+    }
+    .nav-box-right {
+        position : absolute;
+        transform: rotate(-90deg);
+        transform-origin: center;
+        top : 30%;
+        left : -20%
+    }
+    .nav-box-right-heading{
+        font-size : 20px;
+        font-weight : bold;
+        color : gray;
+        width : 200px;
+        font-family : gilroy
+    }
+    
+    /* Style for About Page */
+    .content {
+        font-size : 17px;
+        line-height : 1.7
+    }
+    .content-heading{
+        font-size : 15px;
+        font-weight: bolder;
+        font-family: gilroy
+    }
+    
+    /* Image diagonal animation */
+    
+    @keyframes diagonal {
+        0%{
+            height : 65px; 
+            width :auto; 
+            top : 50%; 
+            transform: translate(-70%, -100%); 
+            position : absolute
+        }
+        100% {
+            height : 30px; 
+            width :auto; 
+            top : -10%;
+            transform: translate(350px, -40px);
+            position : absolute
+        }
+    }
+    #diag {
         height : 65px; 
         width :auto; 
         top : 50%; 
+        left : 50%;
         transform: translate(-70%, -100%); 
         position : absolute
     }
-    100% {
-        height : 30px; 
-        width :auto; 
-        top : -10%;
-        transform: translate(350px, -40px);
-        position : absolute
+    
+    /* Timeline Page */
+    
+    .timeline-box {
+        border-top : 4px solid black;
+        height : 190px
     }
-}
-#diag {
-    height : 65px; 
-    width :auto; 
-    top : 50%; 
-    left : 50%;
-    transform: translate(-70%, -100%); 
-    position : absolute
+    .timeline-box-left {
+        border-left : 4px solid black;            
+        border-top : 4px solid black;
+        height : 190px
+    }
+    .timeline-box-right {
+        border-right : 4px solid black;
+        border-top : 4px solid black;
+        height : 190px
+    }
+    .timeline-circle-left-top {
+        position : absolute;
+        height : 20px;
+        width : 20px;
+        border-radius : 50%;
+        left : 0;
+        top : 0;
+        transform: translate(-50%, -50%);
+        z-index: 100
+    }
+    .timeline-circle-left-bottom {
+        position : absolute;
+        height : 20px;
+        width : 20px;
+        border-radius : 50%;
+        left : 0;
+        bottom : 0;
+        transform: translate(-50%, 50%);
+        z-index: 100
+    }
+    .timeline-circle-right-top {
+        position : absolute;
+        height : 20px;
+        width : 20px;
+        border-radius : 50%;
+        right : 0;
+        top : 0;
+        transform: translate(50%, -50%);
+        z-index: 100
+    }
+    .timeline-circle-right-bottom{
+        position : absolute;
+        height : 20px;
+        width : 20px;
+        border-radius : 50%;
+        right : 0;
+        bottom : 0;
+        transform: translate(50%, 50%);
+        z-index: 100
+    }
+    .time {
+        font-weight: bolder;
+        font-family: gilroy
+    }
+    .event{
+        font-size : 16px
+    }
+    
+    
+    /* Speakers Page */
+    
+    
+    .speakers-card {
+        padding: 10px 15px;
+        height: 140px
+    }
+    
+    .speakers-pic {
+        height: 120px;
+        border-radius: 50%;
+        border: 2px solid #FFC334
+    }
+    
+    .speakers-details {
+        height: 120px;
+        padding-top: 10px;
+        padding-left: 20px;
+        color: lightslategray;
+    }
+    .speakers-btn {
+        padding : 12px 50px;
+        border-radius : 5px;
+        background-color: #FFC334;
+        color : white;
+        margin-top : 40px;
+        outline : none;
+        font-size : 17px;
+        font-weight : bolder;
+        border : 2px solid transparent;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    /* Sponsors Page */
+    
+    .sponsors-btn {
+        padding : 12px 50px;
+        border-radius : 5px;
+        background-color: #FE524D;
+        color : white;
+        margin-top : 40px;
+        outline : none;
+        font-size : 17px;
+        font-weight : bolder;
+        border : 2px solid transparent;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    /* Downloads page */
+    
+    .downloads-btn {
+        padding : 12px 40px;
+        border-radius : 5px;
+        background-color: #34AD6D;
+        color : white;
+        margin-top : 22px;
+        margin-bottom : 30px;
+        outline : none;
+        font-size : 17px;
+        font-weight : bolder;
+        border : 2px solid transparent;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    /* General animation related css for laptop screen*/
+    #about-us-top,
+    #hackathon-top,
+    #timeline-top,
+    #speakers-top,
+    #sponsors-top,
+    #contact-us-top,
+    #downloads-top,
+    #previous-events-top {
+        display : none
+    }
+    
+    /* previous events */
+    
+    .nav-box-pre{
+        transform: translateX(-50%);
+        height : 75px;
+        border : 8px solid transparent;
+        width : 100%
+    }
+    .nav-box-heading-pre{
+        font-family: 'gilroy';
+        width : 900px;
+        padding-left : 20px;
+        display: inline-flex; 
+        transform: translateY(-60%); 
+        background: white;
+        position: absolute;
+        left : 51%;
+        font-size : 40px;
+        font-weight : bold;
+        color : #141414;
+        cursor: pointer
+    }
+    
+    .back-btn-pre{
+        padding-left : 35px; 
+        color : #FFC334; 
+        font-family: gilroy; 
+        font-size : 25px
+    }
+    .img-container-pre{
+        width : 170px;
+        height : 170px;
+        border : 2px solid black;
+        display: inline-block;
+        margin : 20px 20px 10px 10px
+    }
+    .scrolling-wrapper {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+      }
+    .scrolling-wrapper {
+        -webkit-overflow-scrolling: touch;
+      }
+    
 }
 
-/* Timeline Page */
-
-.timeline-box {
-    border-top : 4px solid black;
-    height : 190px
-}
-.timeline-box-left {
-    border-left : 4px solid black;            
-    border-top : 4px solid black;
-    height : 190px
-}
-.timeline-box-right {
-    border-right : 4px solid black;
-    border-top : 4px solid black;
-    height : 190px
-}
-.timeline-circle-left-top {
-    position : absolute;
-    height : 20px;
-    width : 20px;
-    border-radius : 50%;
-    left : 0;
-    top : 0;
-    transform: translate(-50%, -50%);
-    z-index: 100
-}
-.timeline-circle-left-bottom {
-    position : absolute;
-    height : 20px;
-    width : 20px;
-    border-radius : 50%;
-    left : 0;
-    bottom : 0;
-    transform: translate(-50%, 50%);
-    z-index: 100
-}
-.timeline-circle-right-top {
-    position : absolute;
-    height : 20px;
-    width : 20px;
-    border-radius : 50%;
-    right : 0;
-    top : 0;
-    transform: translate(50%, -50%);
-    z-index: 100
-}
-.timeline-circle-right-bottom{
-    position : absolute;
-    height : 20px;
-    width : 20px;
-    border-radius : 50%;
-    right : 0;
-    bottom : 0;
-    transform: translate(50%, 50%);
-    z-index: 100
-}
-.time {
-    font-weight: bolder;
-    font-family: gilroy
-}
-.event{
-    font-size : 16px
-}
-
-
-/* Speakers Page */
-
-
-.speakers-card {
-    padding: 10px 15px;
-    height: 140px
-}
-
-.speakers-pic {
-    height: 120px;
-    border-radius: 50%;
-    border: 2px solid #FFC334
-}
-
-.speakers-details {
-    height: 120px;
-    padding-top: 10px;
-    padding-left: 20px;
-    color: lightslategray;
-}
-.speakers-btn {
-    padding : 12px 50px;
-    border-radius : 5px;
-    background-color: #FFC334;
-    color : white;
-    margin-top : 40px;
-    outline : none;
-    font-size : 17px;
-    font-weight : bolder;
-    border : 2px solid transparent;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-/* Sponsors Page */
-
-.sponsors-btn {
-    padding : 12px 50px;
-    border-radius : 5px;
-    background-color: #FE524D;
-    color : white;
-    margin-top : 40px;
-    outline : none;
-    font-size : 17px;
-    font-weight : bolder;
-    border : 2px solid transparent;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-/* Downloads page */
-
-.downloads-btn {
-    padding : 12px 40px;
-    border-radius : 5px;
-    background-color: #34AD6D;
-    color : white;
-    margin-top : 22px;
-    margin-bottom : 30px;
-    outline : none;
-    font-size : 17px;
-    font-weight : bolder;
-    border : 2px solid transparent;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-/* General animation related css for laptop screen*/
-#about-us-top,
-#hackathon-top,
-#timeline-top,
-#speakers-top,
-#sponsors-top,
-#contact-us-top,
-#downloads-top,
-#previous-events-top {
-    display : none
-}
-
-/* previous events */
-
-.nav-box-pre{
-    transform: translateX(-50%);
-    height : 75px;
-    border : 8px solid transparent;
-    width : 100%
-}
-.nav-box-heading-pre{
-    font-family: 'gilroy';
-    width : 900px;
-    padding-left : 20px;
-    display: inline-flex; 
-    transform: translateY(-60%); 
-    background: white;
-    position: absolute;
-    left : 51%;
-    font-size : 40px;
-    font-weight : bold;
-    color : #141414;
-    cursor: pointer
-}
-
-.back-btn-pre{
-    padding-left : 35px; 
-    color : #FFC334; 
-    font-family: gilroy; 
-    font-size : 25px
-}
-.img-container-pre{
-    width : 170px;
-    height : 170px;
-    border : 2px solid black;
-    display: inline-block;
-    margin : 20px 20px 10px 10px
-}
-.scrolling-wrapper {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-  }
-.scrolling-wrapper {
-    -webkit-overflow-scrolling: touch;
-  }
