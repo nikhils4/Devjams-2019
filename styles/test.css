@@ -1,5 +1,14 @@
   
   @media (max-width : 700px){
+
+    @font-face {
+        font-family: gilroy;
+        src: url(../assets/gilroy-bold-cufonfonts-webfont/gilroy-Bold.woff);
+    }
+    @font-face {
+        font-family: gilroy-light;
+        src: url(../assets/gilroy-bold-cufonfonts-webfont/gilroy-Light.woff);
+    }
     /* General styling */
 
     #largeView {
@@ -25,7 +34,8 @@
 
   .sm-heading {
       font-weight: bold;
-      font-size: 19px
+      font-size: 19px;
+      font-family: gilroy;
   }
 
   .sm-content {
@@ -39,7 +49,6 @@
 
   /* Navbar Styling */
   .sm-card {
-      background: #ecf0f1;
       display: flex;
       min-width: 100%;
       overflow-x: scroll;
@@ -54,7 +63,9 @@
 
   .card--content {
       text-align : center;
-      min-width: 200px;
+      min-width: 150px;
+      height : auto;
+      border-top : 10px solid #ecf0f1
   }
 
   /* Navbar animation */
@@ -139,9 +150,17 @@
       border-radius: 50%
   }
 
-  .sm-timeline-time {}
+  .sm-timeline-time {
+      font-weight: bolder;
+      font-size : 20px;
+      font-family: gilroy;
 
-  .sm-timeline-event {}
+  }
+
+  .sm-timeline-event {
+    font-size : 20px
+
+  }
 
   .sm-time-event-cover {
       position: absolute;
@@ -154,7 +173,8 @@
   /* Speakers */
   .sm-details-cover {
       width: 100%;
-      height: 90px;
+      height: 90px;;
+      margin-bottom : 50px
   }
 
   .sm-avatar {
@@ -169,11 +189,16 @@
 
   .sm-speakers-name {
       margin-bottom: 5px;
-      margin-top: 5px
+      margin-top: 5px;
+      font-size :18px;
+      font-weight : bolder;
+      font-family: gilroy;
+
   }
 
   .sm-speakers-details {
       margin-top: 5px;
+      font-size : 18px;
   }
 
   .sm-avatar-cover {
@@ -184,7 +209,7 @@
   .sm-speakers-btn {
       outline: none;
       border: 2px solid #FFC334;
-      border-radius: 10px;
+      border-radius: 7px;
       color: white;
       font-size: 18px;
       font-weight: bolder;
@@ -197,7 +222,7 @@
   .sm-sponsors-btn {
       outline: none;
       border: 2px solid #FE524D;
-      border-radius: 10px;
+      border-radius: 7px;
       color: white;
       font-size: 18px;
       font-weight: bolder;
@@ -207,9 +232,18 @@
   }
 
   /* Contact Us */
-  .sm-contact-us-details {}
+  .sm-contact-us-details {
+      font-size : 22px;
+      font-weight : bolder;
+      font-family: gilroy;
 
-  .sm-contact-us-number {}
+  }
+
+  .sm-contact-us-number {
+    font-size : 22px;
+    font-family: gilroy-light;
+
+  }
 
   .sm-contact-us-cover {
       margin-top: 40px
@@ -219,15 +253,18 @@
   .sm-downloads-btn {
       outline: none;
       border: 2px solid #34AD6D;
-      border-radius: 10px;
+      border-radius: 7px;
       color: white;
-      font-size: 15px;
+      font-size: 18px;
       font-weight: bolder;
       background: #34AD6D;
       padding: 15px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   .sm-downloads-head{
+    font-size : 21px;
+    font-weight : bolder;
+    font-family: gilroy;
 
   }
 
@@ -240,8 +277,18 @@
   #sm-sponsors-top, 
   #sm-contact-us-top, 
   #sm-downloads-top,
-  #sm-prev-events {
+  #sm-prev-events-top {
       display: none
+  }
+
+  /* previous events */
+
+  .sm-prev-card {
+    width : 50%; 
+    height : 200px; 
+    border : 2px solid black; 
+    margin : 0 auto; 
+    margin-top : 40px
   }
   }
   
