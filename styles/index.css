@@ -194,7 +194,7 @@
         font-size : 17px;
         font-weight : bolder;
         border : 2px solid transparent;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
     }
     
     /* Sponsors Page */
@@ -209,7 +209,7 @@
         font-size : 17px;
         font-weight : bolder;
         border : 2px solid transparent;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
     }
     
     /* Downloads page */
@@ -225,7 +225,7 @@
         font-size : 17px;
         font-weight : bolder;
         border : 2px solid transparent;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
     }
     
     /* General animation related css for laptop screen*/
