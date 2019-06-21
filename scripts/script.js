@@ -30,21 +30,21 @@ function colorAnimate(event, color, blocknAnimate){
     document.getElementById(blocknAnimate.slice(0,-4) + "-img").classList.add("animated" ,"fadeInRight", "faster");
 }
 
-document.getElementById("back-btn").addEventListener("click", (e) => {
-    document.getElementById("previous-events-top").style.display = "none";
-    document.getElementById("home-top").style.display = "block";
-    document.getElementById("home-top").classList.add("animated" ,"fadeInUp", "faster");
-    document.getElementById("img-top").style.display = "block";
-} )
+// document.getElementById("back-btn").addEventListener("click", (e) => {
+//     // document.getElementById("previous-events-top").style.display = "none";
+//     document.getElementById("home-top").style.display = "block";
+//     document.getElementById("home-top").classList.add("animated" ,"fadeInUp", "faster");
+//     document.getElementById("img-top").style.display = "block";
+// } )
 
-document.getElementsByClassName("nav-box-right-heading")[0].addEventListener("click", (e) => {
-    mainPageId.forEach( element => {
-        document.getElementById(element).style.display = "none"
-    })
-    document.getElementById("img-top").style.display = "none";
-    document.getElementById("previous-events-top").style.display = "block";
-    document.getElementById("previous-events-top").classList.add("animated" ,"fadeInRight", "faster");
-} )
+// document.getElementsByClassName("nav-box-right-heading")[0].addEventListener("click", (e) => {
+//     mainPageId.forEach( element => {
+//         document.getElementById(element).style.display = "none"
+//     })
+//     document.getElementById("img-top").style.display = "none";
+//     // document.getElementById("previous-events-top").style.display = "block";
+//     // document.getElementById("previous-events-top").classList.add("animated" ,"fadeInRight", "faster");
+// } )
 
 
 
@@ -71,10 +71,11 @@ function navAnimate() {
 //     document.getElementById("sm-about-us").style.paddingLeft = "150px";
 // }
 
-let smnavId = ["sm-about-us", "sm-hackathon", "sm-downloads", "sm-speakers", "sm-sponsors", "sm-prev-events", "sm-timeline", "sm-contact-us"]
-let smMainPageId = [ "sm-about-us-top", "sm-hackathon-top", "sm-timeline-top", "sm-speakers-top", "sm-sponsors-top", "sm-contact-us-top", "sm-downloads-top", "sm-prev-events-top"]
+let smnavId = ["sm-about-us", "sm-hackathon", "sm-downloads", "sm-speakers", "sm-sponsors",  "sm-timeline", "sm-contact-us"]
+// "sm-prev-events",
+let smMainPageId = [ "sm-about-us-top", "sm-hackathon-top", "sm-timeline-top", "sm-speakers-top", "sm-sponsors-top", "sm-contact-us-top", "sm-downloads-top"]
 
-
+// "sm-prev-events-top"
 function smColorUpdate(e, int) {
     smnavId.forEach(element => {
         if (element == e.target.id) {
