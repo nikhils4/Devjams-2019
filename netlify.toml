@@ -1,7 +1,7 @@
 [[headers]]
-  for = "/index.html"
+  for = "./index.html"
   [headers.values]
 	cache-control = '''
     public, 
-    max-age=345600
+    max-age=345600,
 	must-revalidate'''
