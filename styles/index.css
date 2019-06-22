@@ -16,10 +16,12 @@
     
     @font-face {
         font-family: gilroy;
+        font-display: auto;
         src: url(../assets/gilroy-bold-cufonfonts-webfont/gilroy-Bold.woff);
     }
     @font-face {
         font-family: gilroy-light;
+        font-display: auto;
         src: url(../assets/gilroy-bold-cufonfonts-webfont/gilroy-Light.woff);
     }
     
