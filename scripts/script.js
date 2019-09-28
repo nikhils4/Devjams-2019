@@ -1,8 +1,8 @@
 
 // for color change of the nav-bar headings on click
-let colors = ['#FE524D', '#4E96FC', '#34AD6D', '#FFC334'];
-let navId = ['contact-us', 'downloads', 'hackathon', 'timeline', 'speakers', 'about-us', 'sponsors']
-let mainPageId = ["home-top", "about-us-top", "hackathon-top", "timeline-top", "speakers-top", "sponsors-top", "contact-us-top", "downloads-top"]
+let colors = ['#FE524D', '#4E96FC', '#34AD6D', '#FFC334', '#000000'];
+let navId = ['contact-us', 'downloads', 'main', 'hackathon', 'timeline', 'speakers', 'about-us', 'sponsors']
+let mainPageId = ["home-top", "about-us-top", 'main-top',  "hackathon-top", "timeline-top", "speakers-top", "sponsors-top", "contact-us-top", "downloads-top"]
 function colorAnimate(event, color, blocknAnimate){
     document.getElementById("diag").style.animation = "diagonal 0.3s linear";
     document.getElementById("diag").style.animationFillMode = "forwards";
@@ -23,6 +23,7 @@ function colorAnimate(event, color, blocknAnimate){
         if (blocknAnimate != element){
             document.getElementById(element).style.display = "none"
         } else {
+            console.log(element)
             document.getElementById(element).style.display = "block"
         }
     })
@@ -54,11 +55,11 @@ function colorAnimate(event, color, blocknAnimate){
 function navAnimate() {
     document.getElementById("nav-top").style.animation = "sm-navbar-animate 0.4s linear";
     document.getElementById("nav-top").style.animationFillMode = "forwards";
-    document.getElementById("sm-about-us").style.animation = "sm-aboutUs-animate 0.4s linear";
-    document.getElementById("sm-about-us").style.animationFillMode = "forwards";
+    document.getElementById("sm-main").style.animation = "sm-aboutUs-animate 0.4s linear";
+    document.getElementById("sm-main").style.animationFillMode = "forwards";
     document.getElementById("sm-diag").style.animation = "sm-diagonal-logo 0.4s linear";
     document.getElementById("sm-diag").style.animationFillMode = "forwards";
-    document.getElementById("sm-about-us").style.paddingLeft = "150px";
+    document.getElementById("sm-main").style.paddingLeft = "150px";
 }
 
 // function navAnimateGeneral() {
@@ -71,9 +72,9 @@ function navAnimate() {
 //     document.getElementById("sm-about-us").style.paddingLeft = "150px";
 // }
 
-let smnavId = ["sm-about-us", "sm-hackathon", "sm-downloads", "sm-speakers", "sm-sponsors",  "sm-timeline", "sm-contact-us"]
+let smnavId = ["sm-about-us", "sm-hackathon", "sm-downloads", "sm-speakers", "sm-sponsors",  "sm-timeline", "sm-contact-us", "sm-main"]
 // "sm-prev-events",
-let smMainPageId = [ "sm-about-us-top", "sm-hackathon-top", "sm-timeline-top", "sm-speakers-top", "sm-sponsors-top", "sm-contact-us-top", "sm-downloads-top"]
+let smMainPageId = [ "sm-about-us-top", "sm-hackathon-top", "sm-timeline-top", "sm-speakers-top", "sm-sponsors-top", "sm-contact-us-top", "sm-downloads-top", "sm-main-top"]
 
 // "sm-prev-events-top"
 function smColorUpdate(e, int) {
