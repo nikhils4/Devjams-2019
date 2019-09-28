@@ -119,14 +119,14 @@
 
         <!-- Image animation -->
 
-        <div class="container-fluid" id="img-top" style="position : absolute; z-index : -100;">
+        <div class="container-fluid" id="img-top" style="position : absolute; z-index : -100; ">
             <div class="row" style="padding-top : 18vh;">
                 <div class="col-2">
 
                 </div>
                 <div class="col-9" style="height : 500px">
 
-                    <img id="diag" src="assets/Logo.png" style="position: absolute">
+                    <!-- <img id="diag" src="assets/Logo.png" style="position: absolute"> -->
 
                 </div>
                 <div class="col-1">
@@ -184,98 +184,157 @@
                     </div>
 
                 </div>
-                <div class="col-9" id="home-content">
-                    <!-- <div id="back-img" style="background: url('assets/web_grafiti.png'); background-size: cover"></div> -->
-                    <!-- <img src="assets/web_grafiti.png" style="background-size: cover"> -->
-                </div>
-                <!-- <div class="col-1" id="home-img">
-                    <div class="nav-box-right">
-                        <p class="nav-box-right-heading" style="cursor : pointer">
-                            Previous events
-                        </p>
+               
+                <div class="col-10" id="about-us-content" style="padding-top : 120px">
+
+                        <div class="row">
+                            <div class="col-6" style=" position: relative">
+                                    <img src="assets/Logo.png" style="width : 50%; position: absolute; top : 0; left : 50%; transform: translateX(-50%);">
+            
+                            </div>
+            
+                            <div class="col-6">
+                                    <img src="assets/Ideathon@4x.png" style="width : 50%; position: absolute; top : 0; left : 50%; transform: translate(-50%, -35%);">
+            
+                            </div>
+                            <div class="col-6" style="position: relative; text-align: center; padding-top : 70px">
+                                    <a rel="noreferrer" href="https://devjams19.hackerearth.com" target="_blank" style="text-decoration : none">
+                                        <button class="register" id="register">
+                                            Register Now!
+                                        </button>
+                                    </a>
+                                </div>
+                
+                            <div class="col-6" style=" text-align : center; padding-top: 70px" >
+                                <a rel="noreferrer" href="https://ideathon19.hackerearth.com" target="_blank" style="text-decoration : none">
+                                    <button class="register1" id="register1">
+                                        Register Now!
+                                    </button>
+                                </a>
+                            <p style="margin-top : 10px" id="msg"> Only for freshers</p>
+                            </div>
+                        </div>
+            
                     </div>
-                </div> -->
+                    <div id="about-us-img">
+                    </div>
+
+
+
             </div>
         </div>
 
 
-        <div class="container-fluid" id="main-top">
-                <div class="row" style="padding-top : 18vh;background: url('assets/backimg.png'); background-size: cover;background-position: center;">
-                    <div class="col-2" id="main-navbar">
-                            <div class="nav-box" style="border-top-color : #000000">
-                                    <p class="nav-box-heading main" onclick="colorAnimate(event, 4, 'main-top')">
-                                        Home
-                                    </p>
-                                </div>
-                        <div class="nav-box" style="border-top-color : #FE524D">
-                            <p class="nav-box-heading about-us" onclick="colorAnimate(event, 0, 'about-us-top')">
-                                About Us
-                            </p>
-                        </div>
-                        <div class="nav-box" style="border-top-color : #4E96FC">
-                            <p class="nav-box-heading hackathon" onclick="colorAnimate(event, 1, 'hackathon-top')">
-                                Hackathon
-                            </p>
-                        </div>
-                        <div class="nav-box" style="border-top-color : #34AD6D">
-                            <p class="nav-box-heading timeline" onclick="colorAnimate(event, 2, 'timeline-top')">
-                                Timeline
-                            </p>
-                        </div>
-                        <div class="nav-box" style="border-top-color : #FFC334">
-                            <p class="nav-box-heading speakers" onclick="colorAnimate(event, 3, 'speakers-top')">
-                                Speakers
-                            </p>
-                        </div>
-                        <div class="nav-box" style="border-top-color : #FE524D">
-                            <p class="nav-box-heading sponsors" onclick="colorAnimate(event, 0, 'sponsors-top')">
-                                Sponsors
-                            </p>
-                        </div>
-                        <div class="nav-box" style="border-top-color : #4E96FC">
-                            <p class="nav-box-heading contact-us" onclick="colorAnimate(event, 1, 'contact-us-top')">
-                                Contact Us
-                            </p>
-                        </div>
-                        <div class="nav-box" style="border-top-color : #34AD6D">
-                            <p class="nav-box-heading downloads" onclick="colorAnimate(event, 2, 'downloads-top')">
-                                Documents
-                            </p>
-                        </div>
-    
-                    </div>
-                    <div id="main-content" style="width: 59vw">
-    
-                        <!-- <div class="row"> -->
 
-                            <div class="col-10" >
-                                    <img id="diag" src="assets/Logo.png" style="position: absolute">
-                                    <div class="col-12" style="text-align : left;  padding-left : 193px; margin-top: 220px;">
-                                        <a rel="noreferrer" href="https://ideathon19.hackerearth.com" target="_blank" style="text-decoration : none">
-                                            <button class="register" id="register">
-                                                Register Now!
-                                            </button>
-                                        </a>
-                                    </div>
-                                   
-                                    <img id="diag1" src="assets/Ideathon@4x.png" style="position: absolute">
-                                    <div class="col-12" style="text-align : left; padding-left : 190px; margin-left: 448px; margin-top: -200px;">
-                                        <a rel="noreferrer" href="https://devjams19.hackerearth.com" target="_blank" style="text-decoration : none">
-                                            <button class="register1" id="register1" style="position: absolute; top: 96px;left: 213px;">
-                                                Register Now!
-                                            </button>
-                                        </a>
-                                    <p style="font-weight: bold; margin-top : 10px; position: relative; top: 200px;left: 70px;" id="msg"> Only for freshers</p>
-                                    </div>
-                                 <!-- put two buttons here (Laptop view)  -->
-                            </div>
 
-                        <!-- </div> -->
-    
+
+ <!-- Main -->
+
+ <div class="container-fluid" id="main-top">
+    <div class="row" style="padding-top : 18vh;">
+        <div class="col-2" id="main-navbar">
+                <div class="nav-box" style="border-top-color : #000000">
+                        <p class="nav-box-heading main" onclick="colorAnimate(event, 4, 'main-top')">
+                            Home
+                        </p>
                     </div>
-                    <div  id="main-img"></div>
+            <div class="nav-box" style="border-top-color : #FE524D">
+                <p class="nav-box-heading about-us" onclick="colorAnimate(event, 0, 'about-us-top')">
+                    About Us
+                </p>
+            </div>
+            <div class="nav-box" style="border-top-color : #4E96FC">
+                <p class="nav-box-heading hackathon" onclick="colorAnimate(event, 1, 'hackathon-top')">
+                    Hackathon
+                </p>
+            </div>
+            <div class="nav-box" style="border-top-color : #34AD6D">
+                <p class="nav-box-heading timeline" onclick="colorAnimate(event, 2, 'timeline-top')">
+                    Timeline
+                </p>
+            </div>
+            <div class="nav-box" style="border-top-color : #FFC334">
+                <p class="nav-box-heading speakers" onclick="colorAnimate(event, 3, 'speakers-top')">
+                    Speakers
+                </p>
+            </div>
+            <div class="nav-box" style="border-top-color : #FE524D">
+                <p class="nav-box-heading sponsors" onclick="colorAnimate(event, 0, 'sponsors-top')">
+                    Sponsors
+                </p>
+            </div>
+            <div class="nav-box" style="border-top-color : #4E96FC">
+                <p class="nav-box-heading contact-us" onclick="colorAnimate(event, 1, 'contact-us-top')">
+                    Contact Us
+                </p>
+            </div>
+            <div class="nav-box" style="border-top-color : #34AD6D">
+                <p class="nav-box-heading downloads" onclick="colorAnimate(event, 2, 'downloads-top')">
+                    Documents
+                </p>
+            </div>
+
+        </div>
+        <div class="col-10" id="about-us-content" style="padding-top : 120px">
+
+            <div class="row">
+                <div class="col-6" style=" position: relative">
+                        <img src="assets/Logo.png" style="width : 50%; position: absolute; top : 0; left : 50%; transform: translateX(-50%);">
+
+                </div>
+
+                <div class="col-6">
+                        <img src="assets/Ideathon@4x.png" style="width : 50%; position: absolute; top : 0; left : 50%; transform: translate(-50%, -35%);">
+
+                </div>
+                <div class="col-6" style="position: relative; text-align: center; padding-top : 70px">
+                        <a rel="noreferrer" href="https://devjams19.hackerearth.com" target="_blank" style="text-decoration : none">
+                            <button class="register" id="register">
+                                Register Now!
+                            </button>
+                        </a>
+                    </div>
+    
+                <div class="col-6" style=" text-align : center; padding-top: 70px" >
+                    <a rel="noreferrer" href="https://ideathon19.hackerearth.com" target="_blank" style="text-decoration : none">
+                        <button class="register1" id="register1">
+                            Register Now!
+                        </button>
+                    </a>
+                <p style="margin-top : 10px" id="msg"> Only for freshers</p>
                 </div>
             </div>
+
+        </div>
+        <div id="main-img">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         <!-- About US -->
@@ -440,7 +499,7 @@
         <!-- Timeline -->
 
         <div class="container-fluid" id="timeline-top">
-            <div class="row" style="padding-top : 13vh">
+            <!-- <div class="row" style="padding-top : 13vh">
                 <div class="col-3"></div>
                 <div class="col-6">
                     <div class="row">
@@ -465,8 +524,8 @@
                     </div>
                 </div>
                 <div class="col-3"></div>
-            </div>
-            <div class="row" style="padding-top : 5vh">
+            </div> -->
+            <div class="row" style="padding-top : 18vh">
                 <div class="col-2" id="tiemline-navbar">
       <div class="nav-box" style="border-top-color : #000000">
                         <p class="nav-box-heading main" onclick="colorAnimate(event, 4, 'main-top')">
@@ -510,7 +569,13 @@
                     </div>
 
                 </div>
-                <div class="col-7" id="timeline-content">
+
+
+                <div class="col-9" style="text-align: center; padding-top : 200px">
+                    <h2>Coming Soon</h2>
+                </div>
+
+                <!-- <div class="col-7" id="timeline-content">
                     <div class="row" style="padding-left : 100px; padding-top : 80px">
 
                         <div class="col-6 timeline-box">
@@ -733,8 +798,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-3" id="timeline-img"></div>
+                </div> -->
+                <!-- Add col-3 to the lower div -->
+                <div id="timeline-img"></div>
             </div>
         </div>
 
@@ -1193,7 +1259,7 @@
                     <div class="sm-col-12" style="text-align: center">
                         <div class="sm-content-cover">
                             <div class="sm-col-12 sm-content" style="text-align: center" >
-                                <a rel="noreferrer" href="https://ideathon19.hackerearth.com" target="_blank" style="text-decoration : none">
+                                <a rel="noreferrer" href="https://devjams.hackerearth.com" target="_blank" style="text-decoration : none">
                                     <button class="register">
                                         Register Now!
                                     </button>
@@ -1208,7 +1274,7 @@
                     <div class="col-sm-12">
                         <div class="sm-content-cover">
                             <div class="sm-col-12 sm-content" style="text-align: center">
-                                <a rel="noreferrer" href="https://devjams.hackerearth.com" target="_blank" style="text-decoration : none">
+                                <a rel="noreferrer" href="https://ideathon19.hackerearth.com" target="_blank" style="text-decoration : none">
                                     <button class="register">
                                         Register Now!
                                     </button>
@@ -1293,8 +1359,14 @@
 
         <!-- Timeline -->
 
-        <div id="sm-timeline-top" style="margin-top : 40px">
-            <div class="sm-col-12">
+        <!-- Chnage margin-top : 40px -->
+        <div id="sm-timeline-top" style="margin-top : 80px"> 
+            <div class="sm-col-12" style="text-align: center">
+
+                <h2>Coming Soon</h2>
+
+            </div>
+            <!-- <div class="sm-col-12">
                 <div class="sm-timeline-box">
                     <div class="sm-timeline-circle" style="background-color : #34AD6D"></div>
                     <div class="sm-time-event-cover">
@@ -1493,7 +1565,7 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <div id="sm-speakers-top" style="padding-left:40px;">
