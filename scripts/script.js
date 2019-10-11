@@ -59,7 +59,7 @@ function navAnimate() {
     document.getElementById("sm-main").style.animationFillMode = "forwards";
     document.getElementById("sm-diag").style.animation = "sm-diagonal-logo 0.4s linear";
     document.getElementById("sm-diag").style.animationFillMode = "forwards";
-    document.getElementById("sm-main").style.paddingLeft = "150px";
+    document.getElementById("sm-main").style.paddingLeft = "50px";
 }
 
 // function navAnimateGeneral() {
@@ -93,4 +93,8 @@ function smColorUpdate(e, int) {
             document.getElementById(ele).style.display = "none"
         }
     })
+}
+
+window.onload = () => {
+    document.getElementById("sm-main").click();
 }
