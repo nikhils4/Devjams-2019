@@ -13,6 +13,11 @@
         padding : 0;
         font-family: 'Work Sans', sans-serif;
     }
+
+    .sponsor-logo {
+        text-align : center;
+        padding : 50px
+    }
     
     @font-face {
         font-family: gilroy;

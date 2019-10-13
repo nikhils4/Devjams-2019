@@ -33,6 +33,13 @@
       width: 100%;
       height: auto
   }
+  .sm-col-6 {
+    width: 45%;
+    display: inline-block;
+    height: auto;
+    padding : 10px;
+    text-align: center;
+}
 
   .sm-heading {
       font-weight: bold;
