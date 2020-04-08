@@ -42,7 +42,7 @@ Samarth Nayyar
 <td>
 
 
-<img src="https://avatars2.githubusercontent.com/u/43914142?s=400&v=4" />
+<img src="https://avatars2.githubusercontent.com/u/43914142?s=200&v=4" />
 
 Ananya Ganesh
 
