@@ -18,7 +18,6 @@ Website is live [here](https://devjams.dscvit.com "DevJams Website")
 
 
 <td>
-<img src="https://avatars2.githubusercontent.com/u/30321610?s=200&v=4" />
 
 Nikhil Singh
 
@@ -30,7 +29,6 @@ Nikhil Singh
 
 
 <td>
-<img src="https://avatars2.githubusercontent.com/u/25741135?s=200&v=4" />
 
 Samarth Nayyar
 
@@ -42,7 +40,6 @@ Samarth Nayyar
 <td>
 
 
-<img src="https://avatars2.githubusercontent.com/u/43914142?s=200&v=4" />
 
 Ananya Ganesh
 
