@@ -42,7 +42,7 @@ Samarth Nayyar
 <td>
 
 
-<img src="https://media.licdn.com/dms/image/C5103AQFbHIzS4pbuJQ/profile-displayphoto-shrink_200_200/0?e=1574899200&v=beta&t=O0ojpeJQg8KIga6eG3rqRQt5I5SrKmzIuKRXpgAYsic" />
+<img src="https://avatars2.githubusercontent.com/u/43914142?s=400&v=4" />
 
 Ananya Ganesh
 
